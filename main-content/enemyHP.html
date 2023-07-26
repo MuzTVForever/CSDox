@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="CSDox - Something for CS:GO by VRBTS" />
+	<meta property="og:description" content="CSDox - Something for CS:GO by VRBTS. Configs, scripts, sights, ets." />
+	<meta property="og:url" content="https://muztvforever.github.io/CSDox/" />
+    <meta property="og:site_name" content="CSDox">
+	<meta property="og:image" content="https://muztvforever.github.io/CSGO-Crosshair-From-Demo/source/images/logo.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSDox - Something for CS:GO by VRBTS</title>
+    <link rel="shortcut icon" href="https://muztvforever.github.io/CSGO-Crosshair-From-Demo/source/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <a href="../index.html" class="logo-part">
+                    <img src="https://muztvforever.github.io/CSGO-Crosshair-From-Demo/source/images/logo.png" alt="" class="logo-img">
+                    <h2 class="logo-text">CSDox</h2>
+                </a>
+                <div class="nav-links">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="https://muztvforever.github.io/CSGO-Crosshair-From-Demo/" class="nav-link">Crosshair from demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <aside class="aside-nav">
+                    <h2 class="aside-header">Menu</h2>
+                    <ul class="aside-list">
+                        <a href="../main-content/config.html"><li class="aside-link">My Config</li></a>
+                        <a href="../main-content/launch.html"><li class="aside-link">My Launch Options</li></a>
+                        <a href="../main-content/uaColorChat.html"><li class="aside-link">Ukranian Color Chat</li></a>
+                        <a href="../main-content/enemyHP.html"><li class="aside-link">EnemyHP to Chat</li></a>
+                    </ul>
+                </aside>
+                <div class="main-section">
+                    <div id="enemyHP">
+                        <div class="plates big-plates">
+                            <div class="big-plate map-4">
+                                <h1>EnemyHP to Chat</h1>
+                                <p>Script [Not cheat], that will be send to team chat information, about enemy HP, after your death.</p>
+                            </div>
+                        </div>
+
+                        <p class="text">This script <b class="primary">(This is not a cheat)</b> uses the <b class="primary">-netconport</b> launch option, which allows you to connect to the game console and then read and send console commands. When you die, it writes in the team chat how much hp did you leave the enemy.</p>
+                        
+                        <div class="img-container">
+                            <img class="image" src="../src/img/enemyHP1.png" alt="">
+                        </div>
+                        
+                        <p class="text"><br><b class="primary">How to use:</b><br>Add to launch options this text:</p>
+
+                        <pre class="code-part">
+                            <code class="code">
+<!--                        -->-netconport 10101</code>
+                        </pre>
+
+                        <p class="text">start the game and then, start a program, its all</p>
+                        
+                        <button class="btn" onclick="window.location.href='https://www.google.com'"><i class='bx bx-download'></i> Download</button>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

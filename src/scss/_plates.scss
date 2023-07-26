@@ -1,0 +1,75 @@
+.plates {
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    text-align: center;
+    .big-plate  {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .map-1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Градиент поверх картинки */
+        url("/src/img/inferno01.jpg");
+    }
+    .map-2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Градиент поверх картинки */
+        url("/src/img/inferno02.jpg");
+    }
+    .map-3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Градиент поверх картинки */
+        url("/src/img/dust01.jpg");
+    }
+    .map-4 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Градиент поверх картинки */
+        url("/src/img/Shortdust01.jpg");
+    }
+    .map-5 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Градиент поверх картинки */
+        url("/src/img/overpass01.jpg");
+    }
+    .map-6 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Градиент поверх картинки */
+        url("/src/img/inferno03.jpg");
+    }
+    
+    .small-plate {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        transition: all 0.4s ease;
+        &:hover {
+            scale: 1.02;
+        }
+    }
+}
+
+.small-plates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.big-plates {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .small-plates {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

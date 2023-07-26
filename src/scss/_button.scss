@@ -1,0 +1,15 @@
+.btn {
+    background-color: $surface-color;
+    color: $text-color;
+    padding: 10px 15px;
+    margin: 0 0 15px 0;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    &:is(:hover, :focus) {
+        outline-offset: 5px;
+        background-color: $primary-text-color;
+        color: $surface-color;
+    }
+}
